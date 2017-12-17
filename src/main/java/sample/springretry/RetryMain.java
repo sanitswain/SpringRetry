@@ -1,4 +1,4 @@
-package sample.codes.springretry;
+package sample.springretry;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.springframework.boot.SpringApplication;
@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.RetryListener;
 import org.springframework.retry.annotation.EnableRetry;
 
-import sample.codes.springretry.using_annotation.SampleInterceptor;
-import sample.codes.springretry.using_retrytemplate.SampleRetryListener;
+import sample.springretry.using_annotation.SampleInterceptor;
+import sample.springretry.using_retrytemplate.SampleRetryListener;
 
 @Configuration
 @EnableRetry

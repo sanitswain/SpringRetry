@@ -1,4 +1,4 @@
-package sample.codes.springretry.using_retrytemplate;
+package sample.springretry.using_retrytemplate;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package sample.codes.springretry.using_annotation;
+package sample.springretry.using_annotation;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;

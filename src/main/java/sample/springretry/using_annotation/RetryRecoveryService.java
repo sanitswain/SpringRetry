@@ -1,4 +1,4 @@
-package sample.codes.springretry.using_annotation;
+package sample.springretry.using_annotation;
 
 import org.springframework.retry.annotation.Recover;
 import org.springframework.retry.annotation.Retryable;

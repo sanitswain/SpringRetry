@@ -1,4 +1,4 @@
-package sample.codes.springretry.using_retrytemplate;
+package sample.springretry.using_retrytemplate;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

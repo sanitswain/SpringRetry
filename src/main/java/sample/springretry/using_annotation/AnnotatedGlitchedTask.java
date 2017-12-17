@@ -1,4 +1,4 @@
-package sample.codes.springretry.using_annotation;
+package sample.springretry.using_annotation;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.retry.annotation.Backoff;
