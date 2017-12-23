@@ -31,7 +31,7 @@ public class CircuitBreakerTask {
 	private int counter;
 	private boolean previousCircuitStatus;
 
-	@CircuitBreaker(maxAttempts = 5, openTimeout = 3000l, resetTimeout = 6000l)
+	@CircuitBreaker(maxAttempts = 3, openTimeout = 3000l, resetTimeout = 6000l)
 	public void runTask() throws Exception {
 		boolean circuitOpened = getCircuitStatus();
 		if (!circuitOpened && previousCircuitStatus != circuitOpened) {

@@ -1,15 +1,9 @@
 package sample.springretry;
 
-import org.aopalliance.intercept.MethodInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.retry.RetryListener;
 import org.springframework.retry.annotation.EnableRetry;
-
-import sample.springretry.using_annotation.SampleInterceptor;
-import sample.springretry.using_retrytemplate.SampleRetryListener;
 
 @Configuration
 @EnableRetry
@@ -24,10 +18,5 @@ public class RetryMain {
 	public RetryListener retryListener() {
 		return new SampleRetryListener("AnnotatedGlitchedTask");
 	}*/
-
-	@Bean
-	public MethodInterceptor sampleInterceptor() {
-		return new SampleInterceptor();
-	}
 
 }

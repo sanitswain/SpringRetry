@@ -16,7 +16,7 @@ import org.springframework.retry.support.RetryTemplate;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RunRetryPolicies implements ApplicationRunner {
+public class RunWithoutAnnotationss implements ApplicationRunner {
 
 	@Value("${test.using_template.timeout_retry}")
 	private boolean testTimeoutRetry;

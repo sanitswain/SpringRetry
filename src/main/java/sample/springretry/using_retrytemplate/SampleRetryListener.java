@@ -5,9 +5,8 @@ import org.springframework.retry.RetryContext;
 import org.springframework.retry.listener.RetryListenerSupport;
 
 /**
- * @author Sanit
  * 
- *         Listener to track retry operation.
+ * Listener to track retry operation.
  *
  */
 public class SampleRetryListener extends RetryListenerSupport {

@@ -38,7 +38,7 @@ public class RunUsingAnnotation implements ApplicationRunner {
 			}
 
 			if (testRetryRecovery) {
-				retryRecoveryTask.retryMethod();
+				retryRecoveryTask.retryMethod(5);
 			}
 
 			if (testCircuitBreaker) {
