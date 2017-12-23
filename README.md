@@ -131,8 +131,8 @@ CircuitBreakerTask :: recover() invoked<br/>
 CircuitBreakerTask :: runTask() invoked<br/>
 CircuitBreakerTask :: recover() invoked<br/>
 
-Here you will see circuit will be opened if all the attempts fails before `openTimeout` period and there after the control will 
-not go to the `runTask()` till `resetTimeout` period is elapsed and circuit is closed again. `@Recover` method will be called on 
+Here you will see circuit will be opened if all the attempts fails before `openTimeout` period elapsed and there after the control will 
+not come to the `runTask()` till `resetTimeout` period is elapsed and circuit is closed again. `@Recover` method will be called on 
 each failure no matter circuit is open or closed. The best use case of CircuitBreaker could be the scenario where if a web service's 
 state is confirmed as DOWN after few attempts then all the operations related to this web service should be suspended temporarily 
 assuming web service might be up after some time and called will be resumed.
